@@ -11,23 +11,22 @@
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    opacity: 0.9;
-    border-radius: 30px;
-    border: 1px solid #ffffff;
+    background: rgba(15, 15, 15, 0.95); /* soft black */
+    color: #e0e0e0; /* soft white */
+    opacity: 0.95;
 }
 
 tooltip {
-    opacity: 0.8;
-    border-radius: 5px;
-    border-width: 2px;
+    opacity: 0.9;
+    border-radius: 4px;
+    border-width: 1px;
     border-style: solid;
-    border-color: #11111b;
+    border-color: #222222; /* subtle border */
+    background: rgba(20, 20, 20, 0.95);
 }
 
 tooltip label {
-    color: #cdd6f4;
+    color: #e0e0e0;
 }
 
 /* ---------------------------
@@ -38,7 +37,7 @@ tooltip label {
 }
 
 #workspaces button {
-    color: #ffffff;
+    color: #e0e0e0;
     background: transparent;
     padding: 0 8px;
     margin: 0 3px;
@@ -46,18 +45,18 @@ tooltip label {
 }
 
 #workspaces button.active {
-    color: #e0f7fa; /* soft cyan */
-    border-bottom: 2px solid #4fd1c5; /* bright but gentle teal */
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
 #workspaces button:hover {
-    color: #c3f3c0; /* pastel green */
+    color: #ffffff;
     background: transparent;
-    border-bottom: 2px solid #6ee7b7; /* minty accent */
+    border-bottom: 2px solid #ffffff;
 }
 
 /* ---------------------------
-   Common hover underline for icons
+   Hover underline for all
 --------------------------- */
 #window:hover,
 #cpu:hover,
@@ -72,8 +71,9 @@ tooltip label {
 #backlight:hover,
 #custom-gpu-usage:hover,
 #custom-gpu-temp:hover,
-#custom-appmenu:hover {
-    border-bottom: 3px solid rgba(31, 162, 200, 0.8);
+#custom-appmenu:hover,
+#custom-powermenu:hover {
+    border-bottom: 2px solid #ffffff;
 }
 
 /* ---------------------------
@@ -106,51 +106,54 @@ tooltip label {
 
 #custom-appmenu {
     margin-left: 16px;
-    font-size: 20px; /* Increase icon size */
-    color: #1793d1;  /* Arch Linux color */
+    font-size: 20px;
+    color: #e0e0e0;
 }
 
 #custom-powermenu {
-    margin-right: 20;
-}
-
-#custom-powermenu:hover {
-    border-bottom: 2px solid #f5223e; /* subtle light blue underline */
+    margin-right: 20px;
 }
 
 /* ---------------------------
-   Color accents
+   Unified Terminal Colors
 --------------------------- */
-#battery {
-    color: #02C39A;
-}
-
-#battery.warning {
-    color: #fdfd96;
-}
-
-#battery.critical {
-    color: #ff6961;
-}
-
-#temperature.critical {
-    color: #e92d4d;
-}
-
-
+#battery,
+#battery.warning,
+#battery.critical,
+#temperature.critical,
 #backlight,
-#pulseaudio {
-    color: #89b4fa;
-}
-
-#bluetooth {
-    color: #a6e3a1;
-}
-
-#custom-gpu-usage {
-    color: #f38ba8;
-}
-
+#pulseaudio,
+#bluetooth,
+#custom-gpu-usage,
 #custom-gpu-temp {
-    color: #fab387;
+    color: #e0e0e0;
+}
+
+#backlight-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#backlight-slider trough {
+    min-height: 4px;
+    min-width: 100px;
+    border-radius: 0;
+    background-image: linear-gradient(
+        to right,
+        white 2px,
+        transparent 2px
+    );
+    background-size: 6px 100%;
+    background-repeat: repeat-x;
+    background-color: transparent;
+}
+
+#backlight-slider highlight {
+    background-color: #e0e0e0;
+    min-height: 4px;
+    border-radius: 0;
 }
