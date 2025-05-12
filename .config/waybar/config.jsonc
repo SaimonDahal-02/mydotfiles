@@ -156,7 +156,7 @@
             "network"
         ],
         "modules-left": [
-            "hyprland/window" 
+            "hyprland/window"
         ],
         "backlight": {
             "device": "nvidia_wmi_ec_backlight",
@@ -203,11 +203,11 @@
             "max-length": 50
         },
         "user": {
-                "format": "{user} (up {work_d} days ↑)",
-                "interval": 60,
-                "height": 30,
-                "width": 30,
-                "icon": true
+            "format": "{user} (up {work_d} days ↑)",
+            "interval": 60,
+            "height": 30,
+            "width": 30,
+            "icon": true
         },
         "hyprland/window": {
             "format": "{title}",
