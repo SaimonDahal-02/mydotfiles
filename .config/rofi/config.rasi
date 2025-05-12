@@ -19,12 +19,5 @@ configuration {
   font:                 "Hack Nerd Font 12";
 }
 
-* {
-  roundness:  15px;
-  radius:     15px;
-  
-}
-
-
 @theme ".config/rofi/monochrome.rasi"
 

@@ -19,7 +19,6 @@
 
 window {
     background-color:   @background-color;
-    border-radius:      12px;
     location:           center;
     width:              480px;
 }
