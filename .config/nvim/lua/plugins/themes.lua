@@ -1,36 +1,34 @@
--- return {
---     "cpea2506/one_monokai.nvim",
---     name = 'one_monokai',
---     lazy = false,
---     priority = 1000,
---     config = function()
---         require("one_monokai").setup({
---             transparent = true,
---             colors = {},
---             highlights = function(colors)
---                 return {}
---             end,
---             italics = true,
---         })
---
---         vim.cmd('colorscheme one_monokai')
---     end,
--- }
+-- Using lazy.nvim
+
 return {
-    "webhooked/kanso.nvim",
-    name = "kanso",
+    "ellisonleao/gruvbox.nvim",
+    name = "gruvbox",
     lazy = false,
     priority = 1000,
     config = function()
-        require("kanso").setup({
-            transparent = true,
-            italics = true,
-            theme = "zen", -- Load "zen" theme
-            background = { -- map the value of 'background' option to a theme
-                dark = "zen", -- try "ink" !
+        require("gruvbox").setup({
+            transparent_mode = true,
+            contrast = "soft",
+            palette_overrides = {
+                dark0 = "#32302f", -- background
+                light4 = "#a89984", -- main foreground
+                gray = "#928374", -- secondary text, comments
+                bright_blue = "#83a598", -- accent/highlight color
+                bright_red = "#83a598", -- reuse blue for things like errors if you want
+                bright_green = "#83a598", -- override all others to blue or gray
+                bright_yellow = "#928374",
+                bright_purple = "#928374",
+                bright_aqua = "#928374",
+                bright_orange = "#928374",
+                neutral_red = "#928374",
+                neutral_green = "#928374",
+                neutral_yellow = "#928374",
+                neutral_blue = "#83a598",
+                neutral_purple = "#928374",
+                neutral_aqua = "#928374",
+                neutral_orange = "#928374",
             },
         })
-
-        vim.cmd("colorscheme kanso")
+        require("gruvbox").load()
     end,
 }
