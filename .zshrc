@@ -72,6 +72,8 @@ alias q=exit
 alias cl=clear
 alias ff=fastfetch
 
+alias y=yazi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Initializations
