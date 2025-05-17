@@ -217,3 +217,8 @@ sort_by      	 = "none"
 sort_sensitive = false
 sort_reverse 	 = false
 sort_translit  = false
+
+[log]
+enabled = true
+level = "debug"
+file = "~/.local/state/yazi/yazi.log"
