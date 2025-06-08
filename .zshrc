@@ -1,8 +1,3 @@
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-  source ~/.config/hypr/environment.conf
-  exec Hyprland
-fi
-
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
 # Plugin Manager
@@ -61,7 +56,7 @@ alias python=python3
 alias ..="cd ../"
 alias ...="cd ../../"
 
-alias dotfiles="cd ~/dotfiles && nvim ."
+alias dots="cd ~/dotfiles && nvim ."
 alias dotrefresh="source ~/.zshrc"
 
 alias ls='ls -h --color=auto --group-directories-first'
