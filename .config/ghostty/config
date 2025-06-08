@@ -1,6 +1,6 @@
 shell-integration = zsh
 font-family = Hack Nerd Font 
-theme = Chalk 
+theme = nord 
 gtk-titlebar = false
 
 mouse-hide-while-typing = true

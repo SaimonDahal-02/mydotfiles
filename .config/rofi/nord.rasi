@@ -22,6 +22,8 @@
 window {
     background-color:   @background-color;
     border-radius:      14px;
+    border:             2px;
+    border-color:       @color3;
     location:           center;
     width:              480px;
 }
