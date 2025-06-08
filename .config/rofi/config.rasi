@@ -19,5 +19,5 @@ configuration {
   font:                 "Hack Nerd Font 12";
 }
 
-@theme ".config/rofi/monochrome.rasi"
+@theme ".config/rofi/nord.rasi"
 
