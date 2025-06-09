@@ -14,53 +14,6 @@ $character"""
 [fill]
 symbol = " "
 
-[python]
-style = 'teal'
-symbol = ' '
-format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-pyenv_version_name = true
-pyenv_prefix = ''
-
-[git_branch]
-style = 'fg:green'
-symbol = ' '
-format = '[on](white) [$symbol$branch ]($style)'
-
-[git_status]
-style = 'fg:green'
-format = '([$all_status$ahead_behind]($style) )'
-
-[directory]
-style = 'bold cyan'
-format = '[$path ]($style)'
-truncation_length = 3
-truncation_symbol = '…/'
-truncate_to_repo = false
-
-[directory.substitutions]
-'Documents' = '󰈙'
-'Downloads' = ' '
-'Music' = ' '
-'Pictures' = ' '
-
-[lua]
-symbol = ' '
-
-[package]
-symbol = '󰏗 '
-
-[cmd_duration]
-min_time = 500
-style = 'fg:gray'
-format = '[$duration]($style)'
-
-[docker_context]
-symbol = ' '
-style = 'fg:#06969A'
-format = '[$symbol]($style) $path'
-detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile']
-detect_extensions = ['Dockerfile']
-
 [palettes.nord]
 dark_blue = '#5E81AC'
 blue = '#81A1C1'
@@ -70,19 +23,52 @@ orange = '#D08770'
 green = '#A3BE8C'
 yellow = '#EBCB8B'
 purple = '#B48EAD'
-gray = '#434C5E'
+gray = '#4C566A'
 black = '#2E3440'
-white='#D8DEE9'
+white = '#D8DEE9'
 
-[palettes.onedark]
-dark_blue='#61afef'
-blue='#56b6c2'
-red='#e06c75'
-green='#98c379'
-purple='#c678dd'
-cyan='#56b6c2'
-orange='#be5046'
-yellow='#e5c07b'
-gray='#828997'
-white ='#abb2bf'
-black='#2c323c'
+[directory]
+style = 'bold blue'  # nord blue
+format = '[$path ]($style)'
+truncation_length = 3
+truncation_symbol = '…/'
+truncate_to_repo = false
+[directory.substitutions]
+'Documents' = '󰈙'
+'Downloads' = ' '
+'Music' = ' '
+'Pictures' = ' '
+
+[git_branch]
+symbol = ' '
+style = 'fg:nord.green'
+format = '[on](fg:nord.white) [$symbol$branch ]($style)'
+
+[git_status]
+style = 'fg:nord.green'
+format = '([$all_status$ahead_behind]($style) )'
+
+[python]
+symbol = ' '
+style = 'fg:nord.teal'
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = true
+pyenv_prefix = ''
+
+[lua]
+symbol = ' '
+style = 'fg:nord.purple'
+
+[package]
+symbol = '󰏗 '
+style = 'fg:nord.orange'
+
+[cmd_duration]
+min_time = 500
+style = 'fg:nord.gray'
+format = '[$duration]($style)'
+
+[docker_context]
+symbol = ' '
+style = 'fg:nord.teal'
+format = '[$symbol]($style) $path'
