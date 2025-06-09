@@ -19,10 +19,10 @@
     separator_height = 1
     padding = 6                
     horizontal_padding = 10
-    separator_color = "#1f1e1f" 
+    separator_color = "#3b4252"   # nord3
     corner_radius = 10           
     frame_width = 1
-    frame_color = "#1f1e1f"
+    frame_color = "#d8dee9"       # nord3
 
 [shortcuts]
     close = ctrl+space
@@ -31,19 +31,19 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#1f1e1f"  # semi-transparent black
-    foreground = "#ffffff"    # white text
-    frame_color = "#ffffff"   # minimal white frame
+    background = "#2e3440"        # nord0
+    foreground = "#d8dee9"        # nord4
+    frame_color = "#d8dee9"       # nord5
     timeout = 3
 
 [urgency_normal]
-    background = "#1f1e1f"
-    foreground = "#ffffff"
-    frame_color = "#ffffffFF"
+    background = "#3b4252"        # nord1
+    foreground = "#eceff4"        # nord6
+    frame_color = "#d8dee9"       # nord10
     timeout = 5
 
 [urgency_critical]
-    background = "#000000FF"  # less transparent for critical
-    foreground = "#ff6961"    # same as battery.critical
-    frame_color = "#ff6961"
+    background = "#2e3440"        # nord0
+    foreground = "#bf616a"        # nord11
+    frame_color = "#d8dee9"       # nord11
     timeout = 0
