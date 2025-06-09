@@ -84,7 +84,9 @@ tooltip label {
 #custom-gpu-usage:hover,
 #custom-gpu-temp:hover,
 #custom-appmenu:hover,
-#custom-powermenu:hover {
+#custom-powermenu:hover, 
+#custom-nm-launcher:hover,
+#custom-cava:hover {
     border-bottom: 2px solid #81A1C1;
 }
 
@@ -104,7 +106,9 @@ tooltip label {
 #bluetooth,
 #backlight,
 #custom-gpu-usage,
-#custom-gpu-temp {
+#custom-gpu-temp,
+#custom-nm-launcher,
+#custom-cava {
     margin-right: 16px;
 }
 
@@ -123,9 +127,6 @@ tooltip label {
 }
 
 #custom-powermenu {
-    margin-right: 20px;
-}
-#custom-nm-launcher {
     margin-right: 20px;
 }
 
