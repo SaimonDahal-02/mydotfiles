@@ -116,10 +116,10 @@
             "calendar": {
                 "mode": "month",
                 "format": {
-                    "months": "<span color='#ff6699'><b>{}</b></span>",
-                    "days": "<span color='#cdd6f4'><b>{}</b></span>",
-                    "weekdays": "<span color='#7CD37C'><b>{}</b></span>",
-                    "today": "<span color='#ffcc66'><b>{}</b></span>"
+                    "months": "<span color='#8FBCBB'><b>{}</b></span>",        // Nord 7
+                    "days": "<span color='#D8DEE9'><b>{}</b></span>",          // Nord 4
+                    "weekdays": "<span color='#88C0D0'><b>{}</b></span>",      // Nord 8
+                    "today": "<span color='#BF616A'><b>{}</b></span>"          // Nord 11
                 }
             }
         },
