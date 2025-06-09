@@ -18,7 +18,8 @@
         ],
         "modules-right": [
             "battery",
-            "tray",
+            "custom/nm-launcher",
+            // "tray",
             "bluetooth",
             "clock",
             "custom/powermenu"
@@ -39,9 +40,17 @@
             "rotate": 0,
             "on-click": "$HOME/dotfiles/.config/rofi/scripts/power-menu.sh"
         },
-        "tray": {
-            "icon-size": 16,
-            "spacing": 10
+        // "tray": {
+        //     "icon-size": 16,
+        //     "spacing": 10
+        // },
+
+        "custom/nm-launcher": {
+            "format": "",  // Or any Wi-Fi icon you like
+            "tooltip": true,
+            "tooltip-format": "Open Network Manager",
+            "on-click": "networkmanager_dmenu",
+            "interval": 0
         },
         "bluetooth": {
             "format": "",
