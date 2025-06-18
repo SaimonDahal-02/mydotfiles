@@ -69,6 +69,8 @@ alias ff=fastfetch
 
 alias y=yazi
 
+alias debug="PYTHONBREAKPOINT=web_pdb.set_trace"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Initializations
