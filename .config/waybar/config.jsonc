@@ -17,7 +17,7 @@
             "hyprland/workspaces"
         ],
         "modules-right": [
-            "custom/cava",
+            // "custom/cava",
             "battery",
             "custom/nm-launcher",
             // "tray",
