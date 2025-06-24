@@ -3,14 +3,11 @@
 # Function to display Rofi menu and execute selected command
 show_menu() {
     local options=(
-        "reboot: New case."
         "shutdown: Lights out."
+        "reboot: New case."
         "lock: File sealed."
         "logout: Out the door."
         "suspend: Taking five."
-        "hibernate: Long nap."
-        "hybrid-sleep: Half out."
-        "suspend-then-hibernate: Five, then gone."
         "soft-reboot: Quick reset."
     )
 
@@ -38,18 +35,6 @@ show_menu() {
         "suspend")
             echo "Taking five — suspending..."
             systemctl suspend
-            ;;
-        "hibernate")
-            echo "Going dark — hibernating..."
-            systemctl hibernate
-            ;;
-        "hybrid-sleep")
-            echo "Half out — hybrid sleep mode."
-            systemctl hybrid-sleep
-            ;;
-        "suspend-then-hibernate")
-            echo "Five, then gone — suspending then hibernating."
-            systemctl suspend-then-hibernate
             ;;
         "soft-reboot")
             echo "Quick reset — soft reboot."
