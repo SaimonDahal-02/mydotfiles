@@ -8,6 +8,6 @@ window-padding-balance = true
 background-opacity = 0.6
 scrollback-limit = 1000000
 
-cursor-style = underline 
+cursor-style = bar 
 cursor-style-blink = false
 shell-integration-features = no-cursor
