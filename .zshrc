@@ -71,6 +71,15 @@ alias y=yazi
 
 alias debug="PYTHONBREAKPOINT=web_pdb.set_trace"
 
+# ignore certain folders when zipping and add .zip extension if user forgets it
+zipclean() {
+  local zipname="$1"
+  local folder="$2"
+  [[ "$zipname" != *.zip ]] && zipname="${zipname}.zip"
+  zip -r "$zipname" "$folder" \
+    --exclude "*/.venv/*" "*/.git/*" "*/.mypy_cache/*" "*/__pycache__/*" "*.lock"
+}
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Initializations
