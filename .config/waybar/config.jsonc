@@ -52,7 +52,7 @@
         // },
 
         "custom/nm-launcher": {
-            "format": "",  // Or any Wi-Fi icon you like
+            "format": "",
             "tooltip": true,
             "tooltip-format": "Open Network Manager",
             "on-click": "networkmanager_dmenu",
