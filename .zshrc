@@ -71,6 +71,8 @@ alias y=yazi
 
 alias debug="PYTHONBREAKPOINT=web_pdb.set_trace"
 
+alias venv="source .venv/bin/activate"
+
 # ignore certain folders when zipping and add .zip extension if user forgets it
 zipclean() {
   local zipname="$1"
